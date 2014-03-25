@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+	<div id="singlealbum">
+		<p>Name: {{ album }}</p>
+		<p>Coast: {{ album.get_coast_display }}</p>
+		<p>Rapper: <a href="/rappers/{{ album.rapper.slug }}/"> {{ album.rapper }} </a></p>
+	</div>
+
+{% endblock %}

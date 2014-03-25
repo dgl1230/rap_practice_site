@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+	<div id="albumslist">
+		{% for album in albums %}
+		<p><a href="/albums/{{ album.slug }}/"><img src = "{{ album.image1.url }}" /> {{ album }} </a></p>
+		{% endfor %}
+	</div>
+
+
+
+{% endblock %}
